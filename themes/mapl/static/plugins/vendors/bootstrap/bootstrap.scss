@@ -1,0 +1,24 @@
+$theme-colors: (
+  "primary": #4a90e2,
+  "success": #2bbc3c,
+  "danger":    #db0011
+);
+$dark:#000;
+$container-max-widths: (
+md: 720px,
+lg: 960px,
+xl: 1300px
+);
+$link-color:#db0011;
+
+$line-height-base:1.7;
+$headings-line-height:1.4;
+$font-size-lg:1rem;
+
+$input-color:#666;
+$input-border-color:#dfe8ef;
+
+$input-btn-padding-y-lg:      0.75rem;
+// Bootstrap and its default variables
+@import "scss/bootstrap";
+

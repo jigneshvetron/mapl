@@ -1,0 +1,158 @@
+{{ define "main" }}
+    <!-- Banner/Slider -->
+    {{ with .Params.block }}
+    <div class="page-head section row-vm light">
+        <div class="imagebg">
+            <img src="{{ site.Params.images.aboutbanner | absURL }}" alt="Contact Banner">
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>Contact Us</h1>
+                    <div class="page-breadcrumb"> 
+                        <ul class="breadcrumb">
+                            <li><a href="">{{.Title}}</a></li>
+                            <li class="active"><span>Contact Us</span></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #end Banner/Slider -->
+    </header>
+    <!-- Section -->
+    <div class="section section-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 res-m-bttm">
+                    <div class="contact-information">
+                        <h2>Contact Information</h2>
+                        <div class="row">
+                            <div class="col-sm-4 res-m-bttm">
+                                <div class="contact-entry">
+                                    <p>Crypto<span>Mining</span></p>
+                                    <p>34 south franklin road<br />santa ana,ca 8975,usa</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 res-m-bttm">
+                                <div class="contact-entry">
+                                    <p>contact number</p>
+                                    <p>phone: 781-123-9865<br />toll free: 800-123-5689</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 res-m-bttm">
+                                <div class="contact-entry">
+                                    <p>office hours</p>
+                                    <p>monday - friday<br />8:30am - 5:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- form Start-->
+                <?php if(isset($_SESSION['successmsg'])){?>
+                    <strong class="contactalert">
+                        <?php  echo $_SESSION['successmsg'];?>
+                    </strong>
+                <?php } unset($_SESSION['successmsg']); ?>
+                <form action="http://localhost/cryptomining/php/contact.php" class="contactform" method="post" id="form">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-12">
+                            <div class="form-floating">
+                                <label id="resion_title">{{.subject}}</label>
+                                <select class="field__input form-control" name="subject" id="subject">
+                                    <option value="I am not a Cryptomining Customer. Need to talk to Sales Department">I am not a
+                                        Cryptomining Customer. Need
+                                        to talk to Sales Department</option>
+                                    <option value="I am a Cryptomining customer and I need support.">I am a Cryptomining customer and I
+                                        need
+                                        support.</option>
+                                    <option value="I want to chat about something else.">I want to chat about something else.
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <div class="form-floating">
+                                <label for="name">{{.fullname}}*</label>
+                                <input type="text" class="form-control required" name="fullname" id="fullname"
+                                    placeholder="Full Name *">
+                                <strong class="text-danger" id="fail_fullname" style="display: none;">{{ .failfullname }}</strong>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="form-floating">
+                                <label for="email">{{.email}}*</label>
+                                <input type="email" class="form-control required email_validate" name="email" id="email"
+                                    placeholder="Email *">
+                                <strong class="email text-danger" id="fail_email" style="display: none;">{{ .failemail }}</strong>
+                                <strong class="email text-danger" id="fail_emailformat" style="display: none;">{{ .failemailformat
+                                    }}</strong>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                
+                            <div class="form-floating">
+                                <label for="email">{{.phone}}*</label><br>
+                                <input id="phone" class="form-control required email_validate" name="phone"
+                                     type="tel">
+                                <strong class="message text-danger" id="fail_phno" style="display: none;">{{ .failphone }}</strong>
+                                <strong class="message text-danger" id="fail_phno12" style="display: none;">{{ .failphone12 }}</strong>
+                                <strong class="message text-danger" id="fail_phnodigit" style="display: none;">{{ .failphonedigit
+                                    }}</strong>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <div class="form-floating">
+                                <label id="">{{.language}}</label>
+                                <select class="form-control field__input" name="language" id="language">
+                                    <option value="English">English</option>
+                                    <option value="Spain">Spanish</option>
+                                    <option value="Germany">German</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <div class="form-floating">
+                                <label for="floatingTextarea2">{{.message}}*</label>
+                                <textarea class="form-control textarea" placeholder="Message *" id="message" name="message"
+                                    style="height: 100px"></textarea>
+                                <strong class="message text-danger" id="fail_comment" style="display: none;">{{ .failcomment }}</strong>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <label class="checkbox" for="newsletter">
+                               <input type="checkbox" id="newsletter" name="newsletter" value="true" /> {{.subscribe}}
+                            </label>
+                            
+                            
+                        </div>
+                        <div class="col-12">
+                            <div class="btn-style1 submit-div">
+                                <button class="btn-arrow btn contact-submit" type="submit" value="Submit">{{ .sendmsg }} <i
+                                        class="arrow"></i></button>
+                            </div>
+                            <img src="https://greenpwr.eu/images/ajax-loader.gif" class="ajax-loader"
+                                style="height: 25px; width: 25px; display: none;">
+                            <!-- <p  class="success_msg" style='color:green'>{{.sucessmsg}}</p> -->
+                        </div>
+                    </div>
+                </form>
+                <!-- Form End-->
+                </div><!-- .col  -->
+                <!-- <div class="col-md-4">
+                    <div id="gMap" class="google-map"></div>
+                    <a href="#" class="map-link">View on google map <span class="fa fa-caret-right"></span></a>
+                </div> -->
+                <!-- .col  -->
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://www.24medical.net/js/intlTelInput.js"></script> -->
+    
+    {{end}}
+    <!--End mc_embed_signup-->
+    <!-- End Section -->
+{{end}}

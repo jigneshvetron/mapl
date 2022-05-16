@@ -1,0 +1,38 @@
+.uiux{
+    padding:40px;
+}
+.uiux img{
+    width:100px;
+}
+.uiux h1{
+        font-size: 30px;
+        text-align:center;
+}
+.uiux .blog{
+        background: white;
+        padding: 20px;
+        height: 300px;
+}
+.uiux h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px px 0;
+}
+.frontendright img{
+     width:50px;
+     float:left;
+     height:50px;
+}
+.frontendright h3 {
+    margin-left: 70px;
+    color: #db0011;
+    font-weight: 600;
+    font-size:20px;
+}
+.frontendright .inlineblock{
+    display: inline-block;
+    padding: 10px;
+}
+.frontendright p {
+    padding-left: 70px;
+}

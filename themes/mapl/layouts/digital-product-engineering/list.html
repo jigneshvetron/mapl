@@ -1,0 +1,269 @@
+{{ define "main" }}
+<!-- second Start Navbar-->
+<div style="background-color: white">
+  <div class="container">
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: white"
+    >
+      <a class="navbar-brand col-md-2 col-2" href="#"
+        >Full Stack Engineering
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse offset-md-1 col-md-9 col-10"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#ui-ux"
+              >UI/UX <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#frontend">Front End</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">API</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Backend </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Devops </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Quality Assurance</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Scalable & Performance</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Cloud</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- second End Navbar-->
+<!-- Start Background-->
+<div
+  class="bg"
+  style="background-image: url('{{ site.Params.images.bg | absURL }}');height:600px;"
+></div>
+<!-- End Background-->
+<!-- Start Ui-Ux-->
+<section id="ui-ux">
+  <div class="container uiux">
+    <div class="row">
+      <h2>Winning UI/UX Design Experiences that Attract + Engage + Convert</h2>
+      <p>
+        Crafting every imaginable web experiences with pixel perfect UI/UX
+        designs to build full stack web applications, SaaS solutions, web
+        portals & much more.
+      </p>
+      <div class="col-md-3">
+        <div class="blog">
+          <img
+            src="{{ site.Params.images.uiux1 | absURL }}"
+            alt="strategic ui-ux"
+          />
+          <h3>STRATEGIC UI/UX</h3>
+          <p>
+            Tech inspired UI/UX design company that addresses customer pain
+            areas through strategic web interfaces.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="blog">
+          <img src="{{ site.Params.images.uiux2 | absURL }}" alt="agile ux" />
+          <h3>AGILE UX</h3>
+          <p>
+            Bringing together Agile methodology & Design Thinking to deliver
+            superior user experience.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="blog">
+          <img
+            src="{{ site.Params.images.uiux3 | absURL }}"
+            alt="kpi led design"
+          />
+          <h3>KPI LED DESIGN</h3>
+          <p>
+            Design that measures web performance accurately with KPI metrics
+            like Conversions, CLV, CTR, etc.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="blog">
+          <img src="{{ site.Params.images.uiux4 | absURL }}" alt="web" />
+          <h3>WEB INNOVATION</h3>
+          <p>
+            Web Innovation at all corners of the web; from web portals to
+            eCommerce and beyond.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Ui-Ux-->
+<!-- start Front End-->
+<section id="frontend">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-md-6"
+        style="background-image: url({{ site.Params.images.frontend | absURL }});"
+      ></div>
+      <div class="col-md-6">
+        <h4>Design-Centric Front End Web Development</h4>
+        <p>
+          Challenging the status quo through high-end web architecture
+          development, Performance Tuning & UI enhancement.
+        </p>
+        <div class="col-md-12 frontendright">
+          <div class="inlineblock">
+            <img src="{{ site.Params.images.angular | absURL }}" alt="web" />
+            <h3>ANGULAR JS</h3>
+            <p>
+              Leveraging the flexibility in designing creating dynamic web
+              experiences using Angular js development, we developed a web
+              application that enabled last mail delivery tracking through a web
+              interface.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 frontendright">
+          <div class="inlineblock">
+            <img src="{{ site.Params.images.html | absURL }}" alt="web" />
+            <h3>HTML</h3>
+          </div>
+        </div>
+        <div class="col-md-12 frontendright">
+          <div class="inlineblock">
+            <img src="{{ site.Params.images.css | absURL }}" alt="web" />
+            <h3>CSS</h3>
+          </div>
+        </div>
+        <div class="col-md-12 frontendright">
+          <div class="inlineblock">
+            <img src="{{ site.Params.images.javascript | absURL }}" alt="web" />
+            <h3>JAVASCRIPT</h3>
+          </div>
+        </div>
+        <div class="col-md-12 frontendright">
+          <div class="inlineblock">
+            <img src="{{ site.Params.images.jquery | absURL }}" alt="web" />
+            <h3>JQUERY</h3>
+          </div>
+        </div>
+        <div class="col-md-12 frontendright">
+          <div class="inlineblock">
+            <img src="{{ site.Params.images.bootstrap | absURL }}" alt="web" />
+            <h3>BOOTSTRAP</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Front End-->
+<!-- start  Api devlopment-->
+<section>
+  <div class="container">
+    <div class="row">
+      <h2>Multi-tier API Development</h2>
+      <p>
+        Full-fledged Web API development services complete with owned or 3rd
+        party integrations that will get your web application portal up and
+        running in quick time.
+      </p>
+      <!-- Start Api Technology-->
+      <div class="col-md-6">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a
+              class="nav-item nav-link active"
+              id="nav-home-tab"
+              data-toggle="tab"
+              href="#nav-home"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Laravel</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-profile-tab"
+              data-toggle="tab"
+              href="#nav-profile"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+              >Golang</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-contact-tab"
+              data-toggle="tab"
+              href="#nav-contact"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              >Node</a
+            >
+          </div>
+        </nav>
+        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            From startup eCommerce stores to IoT automation for heavy-duty auto
+            maker, Mapl leverages source laravel application development
+            framework to develop custom web solutions from ground up.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          ></div>
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+          ></div>
+        </div>
+      </div>
+      <!--End Api technology-->
+      <!-- start Image data-->
+      <div class="col-md-6">
+        <img src="{{ site.Params.images.api | absURL }}" alt="api" />
+      </div>
+      <!-- End Image Data-->
+    </div>
+  </div>
+</section>
+<!--End Api devlopment-->
+{{end}}

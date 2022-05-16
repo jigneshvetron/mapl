@@ -1,0 +1,77 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'mapl'
+
+  # CSS Plugins
+    [[params.plugins.css]]
+    link = "plugins/fonts/boxicons/css/boxicons.min.css"
+    [[params.plugins.css]]
+    link = "plugins/vendors/bootstrap/bootstrap.css"
+    [[params.plugins.css]]
+    link = "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    [[params.plugins.css]]
+    link = "plugins/css/main.css"
+    [[params.plugins.css]]
+    link = "plugins/css/custom.css"
+   
+  # JS Plugins
+    [[params.plugins.js]]
+    link = "plugins/js/jquery-3.4.1.min.js"
+    [[params.plugins.js]]
+    link = "plugins/js/popper.min.js"
+    [[params.plugins.js]]
+    link = "plugins/vendors/bootstrap/js/bootstrap.min.js"
+    [[params.plugins.js]]
+    link = "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    [[params.plugins.js]]
+    link = "plugins/js/easing.min.js"
+    [[params.plugins.js]]
+    link = "plugins/js/superfish.min.js"
+    [[params.plugins.js]]
+    link = "plugins/js/main.js"
+
+
+  # Images
+    [params.images]
+    slider1 = "plugins/images/banner.png"
+    slider2 = "plugins/images/banner2.png"
+    partner1 = "plugins/images/brands/brand1.png"
+    partner2 = "plugins/images/brands/brand2.png"
+    partner3 = "plugins/images/brands/brand3.png"
+    partner4 = "plugins/images/brands/brand4.png"
+    partner5 = "plugins/images/brands/brand5.png"
+    partner6 = "plugins/images/brands/brand6.png"
+    partner7 = "plugins/images/brands/brand7.png"
+    partner8 = "plugins/images/brands/brand8.png"
+    partner9 = "plugins/images/brands/brand9.png"
+    partner10 = "plugins/images/brands/brand10.png"
+    partner11 = "plugins/images/brands/brand11.png"
+    partner12 = "plugins/images/brands/brand12.png"
+    usecase = "plugins/images/banking.jpg"
+    usecase1 = "plugins/images/ecom.jpg"
+    usecase2 = "plugins/images/carrier.jpg"
+    ucicon1 = "plugins/images/icon1.svg"
+    ucicon2 = "plugins/images/icon2.svg"
+    ucicon3 = "plugins/images/icon3.svg"
+    logo  ="plugins/images/logo.svg"
+    menuicon1 ="plugins/images/menu-icon/digital.png"
+    menuicon2 ="plugins/images/menu-icon/cloud.png"
+    bg ="plugins/images/bg/bg.jpg"
+    uiux1="plugins/images/uiux/strategic-ux.png"
+    uiux2="plugins/images/uiux/agile.png"
+    uiux3="plugins/images/uiux/diagram.png"
+    uiux4="plugins/images/uiux/web.png"
+    frontend="plugins/images/frontend/frontend.png"
+    angular="plugins/images/frontend/angular.png"
+    html="plugins/images/frontend/html.png"
+    css="plugins/images/frontend/css.png"
+    javascript="plugins/images/frontend/javascript.png"
+    jquery="plugins/images/frontend/jquery.png"
+    bootstrap="plugins/images/frontend/bootstrap.png"
+    api="plugins/images/api/API.jpeg"
+
+    
+    
+    
+
